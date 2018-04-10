@@ -18,7 +18,10 @@ namespace MyWeather.View
                 Spacing = 10
             };
 
-            var locationEntry = new Entry();
+            var locationEntry = new Entry()
+            {
+                AutomationId = "LocationEntry"
+            };
             locationEntry.SetBinding(Entry.TextProperty, "Location");
 
             layout.Children.Add(locationEntry);

@@ -1,14 +1,6 @@
 ﻿<Properties StartupConfiguration="{65B45A0F-D6D8-432F-B36D-D7D41675DC76}|Default">
   <MonoDevelop.Ide.ItemProperties.MyWeather.Android PreferredExecutionTarget="Android.PM1LHMA812800786" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MyWeather.Droid/MainActivity.cs">
-    <Files>
-      <File FileName="MyWeather.Droid/MainActivity.cs" Line="26" Column="13" />
-      <File FileName="MyWeather.Appium/iOSTests.cs" Line="14" Column="28" />
-      <File FileName="MyWeather.Appium/Devices.cs" Line="37" Column="51" />
-      <File FileName="MyWeather.Appium/Elements.cs" Line="15" Column="6" />
-      <File FileName="MyWeather.Appium/AndroidTests.cs" Line="14" Column="45" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
