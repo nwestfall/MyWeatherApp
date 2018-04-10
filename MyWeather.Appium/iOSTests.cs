@@ -42,7 +42,15 @@ namespace MyWeather.Appium
         [Test]
         public void GetWeatherForAlbanyTest()
         {
-            
+            elements.GetWeatherLocationEntry.Click();
+            TakeScreenshot(driver, "WeatherLocationEntry.jpg", "Weather Location Entry with Keyboard");
+            elements.GetWeatherLocationEntry.Clear();
+            Assert.IsTrue(string.IsNullOrEmpty(elements.GetWeatherLocationEntry.GetAttribute("value")));
+            elements.GetWeatherLocationEntry.SendKeys("Albany, NY");
+            Assert.AreEqual("Albany, NY", elements.GetWeatherLocationEntry.GetAttribute("value"));
+            elements.GetWeatherButton.Click();
+            Thread.Sleep(5000);
+            TakeScreenshot(driver, "WeatherAlbany.jpg", "Weather Results for Albany");
         }
 
         [OneTimeTearDown]
