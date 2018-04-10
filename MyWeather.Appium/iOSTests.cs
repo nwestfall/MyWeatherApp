@@ -12,7 +12,7 @@ namespace MyWeather.Appium
 {
     [TestFixture]
     [Parallelizable(ParallelScope.Fixtures)]
-    public class iOSTests
+    public class iOSTests : BaseTests
     {
         IOSDriver<IOSElement> driver;
 
@@ -36,11 +36,7 @@ namespace MyWeather.Appium
         {
             elements.GetWeatherButton.Click();
             Thread.Sleep(5000);
-            var screenshot = driver.GetScreenshot().AsByteArray;
-            var filePath = Path.Combine(TestContext.CurrentContext.TestDirectory, "Weather.jpg");
-            using (var fs = File.Create(filePath))
-                fs.Write(screenshot, 0, screenshot.Length);
-            TestContext.AddTestAttachment(filePath, "Weather Results");
+            TakeScreenshot(driver, "Weather.jpg", "Weather Results");
         }
 
         [Test]

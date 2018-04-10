@@ -1,9 +1,11 @@
-﻿<Properties StartupConfiguration="{65B45A0F-D6D8-432F-B36D-D7D41675DC76}|Default">
+﻿<Properties StartupConfiguration="{7F106FBA-12E5-4D92-9F4C-38EAD1652E7E}|Default">
   <MonoDevelop.Ide.ItemProperties.MyWeather.Android PreferredExecutionTarget="Android.Android_Accelerated_Nougat" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MyWeather.Appium/iOSTests.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyWeather.Appium/BaseTests.cs">
     <Files>
-      <File FileName="MyWeather.Appium/AndroidTests.cs" Line="46" Column="15" />
-      <File FileName="MyWeather.Appium/iOSTests.cs" Line="46" Column="10" />
+      <File FileName="MyWeather.Appium/AndroidTests.cs" Line="15" Column="42" />
+      <File FileName="MyWeather.Appium/iOSTests.cs" Line="35" Column="32" />
+      <File FileName="MyWeather.Appium/Elements.cs" Line="1" Column="1" />
+      <File FileName="MyWeather.Appium/BaseTests.cs" Line="14" Column="66" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
