@@ -43,6 +43,13 @@ namespace MyWeather.Appium
             TestContext.AddTestAttachment(filePath, "Weather Results");
         }
 
+        [Test]
+        public void GetWeatherForAlbanyTest()
+        {
+            
+        }
+
+
         [OneTimeTearDown]
         public void TearDown()
         {
