@@ -34,7 +34,8 @@ namespace MyWeather.View
             controlLayout.Children.Add(new Label()
             {
                 Text = "Use Imperial?",
-                VerticalTextAlignment = TextAlignment.Center
+                VerticalTextAlignment = TextAlignment.Center,
+
             });
 
             var imperialSwitch = new Switch();

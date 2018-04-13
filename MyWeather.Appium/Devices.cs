@@ -16,8 +16,8 @@ namespace MyWeather.Appium
 
                 DesiredCapabilities androidCapabilities = new DesiredCapabilities();
                 androidCapabilities.SetCapability("platformName", "Android");
-                androidCapabilities.SetCapability("platformVersion", "8.1");
-                androidCapabilities.SetCapability("deviceName", "Essential PH1");
+                androidCapabilities.SetCapability("platformVersion", "6.0");
+                androidCapabilities.SetCapability("deviceName", "Android Emulator");
                 androidCapabilities.SetCapability("automationName", "UiAutomator2");
                 androidCapabilities.SetCapability("appPackage", "com.refractored.myweather");
                 androidCapabilities.SetCapability("appActivity", ".MainActivity");
