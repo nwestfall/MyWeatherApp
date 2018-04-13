@@ -57,6 +57,7 @@
     <Compile Include="Devices.cs" />
     <Compile Include="Elements.cs" />
     <Compile Include="AndroidTests.cs" />
+    <Compile Include="BaseTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

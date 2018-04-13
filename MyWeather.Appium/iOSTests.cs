@@ -12,7 +12,7 @@ namespace MyWeather.Appium
 {
     [TestFixture]
     [Parallelizable(ParallelScope.Fixtures)]
-    public class iOSTests
+    public class iOSTests : BaseTests
     {
         IOSDriver<IOSElement> driver;
 
@@ -36,11 +36,21 @@ namespace MyWeather.Appium
         {
             elements.GetWeatherButton.Click();
             Thread.Sleep(5000);
-            var screenshot = driver.GetScreenshot().AsByteArray;
-            var filePath = Path.Combine(TestContext.CurrentContext.TestDirectory, "Weather.jpg");
-            using (var fs = File.Create(filePath))
-                fs.Write(screenshot, 0, screenshot.Length);
-            TestContext.AddTestAttachment(filePath, "Weather Results");
+            TakeScreenshot(driver, "Weather.jpg", "Weather Results");
+        }
+
+        [Test]
+        public void GetWeatherForAlbanyTest()
+        {
+            elements.GetWeatherLocationEntry.Click();
+            TakeScreenshot(driver, "WeatherLocationEntry.jpg", "Weather Location Entry with Keyboard");
+            elements.GetWeatherLocationEntry.Clear();
+            Assert.IsTrue(string.IsNullOrEmpty(elements.GetWeatherLocationEntry.GetAttribute("value")));
+            elements.GetWeatherLocationEntry.SendKeys("Albany, NY");
+            Assert.AreEqual("Albany, NY", elements.GetWeatherLocationEntry.GetAttribute("value"));
+            elements.GetWeatherButton.Click();
+            Thread.Sleep(5000);
+            TakeScreenshot(driver, "WeatherAlbany.jpg", "Weather Results for Albany");
         }
 
         [OneTimeTearDown]
